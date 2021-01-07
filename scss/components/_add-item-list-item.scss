@@ -1,0 +1,39 @@
+.add-item-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: $black;
+    background-color: $gray-1;
+    border: 0.1rem solid $gray;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.list-item-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: $green;
+    border-color: $green;
+    border-radius: 0.6rem;
+    color: $white;
+    outline: none;
+    transition: all $dur $ease;
+
+    &:hover {
+        background-color: $green-01;
+        border-color: $green-01;
+    }
+}

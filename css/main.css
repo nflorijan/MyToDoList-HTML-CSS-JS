@@ -232,9 +232,9 @@ input, textarea, select {
 ## Base Layout
 --------------------------------------------------------------*/
 html, body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   height: 100%;
-  background-color: red; }
+  background-color: #23201e; }
 
 html {
   box-sizing: border-box;
@@ -246,7 +246,108 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: "Roboto"; }
+  font-family: "Roboto", sans-serif;
+  color: #0c0c0c; }
 
 input {
   border: none; }
+
+.main-title {
+  font-size: 5.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ffbc10;
+  margin: 3rem 0; }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 37.5rem;
+  width: 100%;
+  margin: 0 auto; }
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.add-item-form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1.6rem; }
+
+.add-item-input {
+  width: 75%;
+  height: 4.4rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+  color: #0c0c0c;
+  background-color: #f2f6f9;
+  border: 0.1rem solid #d5dee7;
+  border-radius: 0.6rem;
+  padding: 0 1.5rem; }
+
+.add-item-button {
+  width: 20%;
+  min-height: 3.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 0 1rem;
+  background: #00bd71;
+  border-color: #00bd71;
+  border-radius: 0.6rem;
+  color: #fff;
+  outline: none;
+  transition: all 350ms ease; }
+  .add-item-button:hover {
+    background-color: #12c67a;
+    border-color: #12c67a; }
+
+.add-item-list-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ffbc10;
+  margin: 1rem 0; }
+
+.add-item-list {
+  background-color: #fff;
+  border-radius: 1.6rem;
+  padding: 1.5rem; }
+
+.add-item-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+  color: #0c0c0c;
+  background-color: #f2f6f9;
+  border: 0.1rem solid #d5dee7;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-bottom: 1rem; }
+  .add-item-list-item:last-child {
+    margin-bottom: 0; }
+
+.list-item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: #00bd71;
+  border-color: #00bd71;
+  border-radius: 0.6rem;
+  color: #fff;
+  outline: none;
+  transition: all 350ms ease; }
+  .list-item-button:hover {
+    background-color: #12c67a;
+    border-color: #12c67a; }

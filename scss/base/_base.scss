@@ -4,6 +4,7 @@
 html, body {
     font-family: $font-main;
     height: 100%;
+	background-color: $black-01;
 }
 
 html {
@@ -19,8 +20,18 @@ html {
 
 body {
 	font-family: $font-main;
+	color: $black;
 }
 
 input {
 	border: none;
+}
+
+.main-title {
+    font-size: 5.4rem;
+    text-align: center;
+    text-transform: uppercase;
+	font-weight: 900;
+    color: $orange;
+	margin: 3rem 0;
 }
