@@ -23,11 +23,15 @@ function createNewListItem(text) {
 
 addButton.addEventListener('click', function() {
     const inputValue = getInputValue();
-    const newListItem = createNewListItem(inputValue);
-
-    itemList.innerHTML += newListItem;
-    deleteButtons = document.querySelectorAll('.list-item-button')
-    asignEventListeners();
+    if (inputValue === "") {
+        alert("Please enter a value in the input field!!!");
+    } 
+    else {
+        const newListItem = createNewListItem(inputValue);
+        itemList.innerHTML += newListItem;
+        deleteButtons = document.querySelectorAll('.list-item-button')
+        asignEventListeners();
+    }
 });
 
 function halndeItemClickButton(event) {
