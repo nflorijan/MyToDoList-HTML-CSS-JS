@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+## Base Layout
+--------------------------------------------------------------*/
+html, body {
+    font-family: $font-main;
+    height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $font-main;
+}
+
+input {
+	border: none;
+}
